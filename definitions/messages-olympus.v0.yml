@@ -1,6 +1,6 @@
 openapi: "3.0.1"
 info:
-  version: 0.5.0
+  version: 0.5.1
   title: Messages API
   description: "The Messages API enables you to send messages to customers via their preferred channels (currently Facebook Messenger, WhatsApp, Viber, and SMS/MMS) using a single API. The Messages API is currently in Beta."
   contact:
