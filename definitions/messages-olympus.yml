@@ -567,8 +567,6 @@ components:
       type: array
       description: The parameters are an array of strings, with the first string being used for {{1}} in the template, with the second being {{2}} etc. Only required if the template specified by `name` contains parameters.
       example:
-        - Verification
-        - '2526'
         - '5'
       items:
         type: string
@@ -735,8 +733,8 @@ components:
               properties:
                 name:
                   type: string
-                  example: 9b6b4fcb_da19_4a26_8fe8_78074a91b584:verify
-                  description: 'The name of the template. For WhatsApp use your WhatsApp namespace (available via Facebook Business Manager), followed by a colon : and the name of the template to use.'
+                  example: sample_shipping_confirmation
+                  description: 'The name of the template to use'
                 parameters:
                   $ref: "#/components/schemas/TemplateParameters"
     Custom:

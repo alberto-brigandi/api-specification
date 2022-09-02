@@ -822,8 +822,7 @@ components:
       type: array
       description: The parameters are an array. The first value being {{1}} in the template.
       example:
-        - Daisy
-        - '12345'
+        - '5'
       items:
         type: string
     imageMessageViberContent:
@@ -994,8 +993,8 @@ components:
           properties:
             name:
               type: string
-              description: The name of the template. For WhatsApp use your WhatsApp namespace (available via Facebook Business Manager), followed by a colon `:` and the name of the template to use.
-              example: example_namespace':'verify
+              description: The name of the template to use
+              example: sample_shipping_confirmation
             parameters:
               $ref: "#/components/schemas/templateParameters"
     templateMessageWhatsApp:
@@ -1017,7 +1016,7 @@ components:
                 - locale
               properties:
                 locale:
-                  example: "en-GB"
+                  example: "en_US"
                   type: string
                   description: The [BCP 47](https://en.wikipedia.org/wiki/IETF_language_tag) language of the template. Vonage will translate the BCP 47 format to the [WhatsApp equivalent](https://developers.facebook.com/docs/whatsapp/message-templates/creation#translations). For examples `en-GB` will be auto-translate to en_GB.
                 policy:
